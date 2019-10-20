@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OroraImageView">
+
+        <attr name="orora_blur_radius" format="float" />
+        <attr name="orora_shadow_offset_x" format="dimension"/>
+        <attr name="orora_shadow_offset_y" format="dimension"/>
+        <attr name="orora_shadow_color" format="color"/>
+<!--        <attr name="orora_clip_shadow" format="boolean"/>-->
+
+
+    </declare-styleable>
+</resources>
