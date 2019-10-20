@@ -68,7 +68,7 @@ allprojects {
 ### Module-level build.gradle
 
 ```gradle
-implementation 'com.github.mym0404:OroraImageView:1.0'
+implementation 'com.github.mym0404:OroraImageView:1.1'
 ```
 
 ----
