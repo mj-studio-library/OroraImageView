@@ -52,6 +52,8 @@ orora.shadowOffsetY = 4f
 
 ## Download
 
+- MinSDK = 14
+
 ### Project-level build.gradle
 
 ```gradle
