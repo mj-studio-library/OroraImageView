@@ -14,61 +14,29 @@ Handy Drop Shadow image in ImageView
 ### xml
 
 ```xml
-<happy.mjstudio.widget.numbermarbleview.NumberMarbleView
-    android:id="@+id/numberMarbleView"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-
-    app:marble_marble_count="5"
-    app:marble_marble_radius="10dp"
-    app:marble_line_color="#000"
-    app:marble_line_length="12dp"
-    app:marble_line_width="2dp"
-    app:marble_number_text_color="#fff"
-    app:marble_number_text_shadow_color="#f00"
-    app:marble_number_text_size="12sp"
-    app:marble_orientation_vertical="false"
-    />
+<happy.mjstudio.ororaimageview.OroraImageView
+    app:orora_blur_radius="25.0"
+    app:orora_shadow_color="@color/colorPrimary"
+    app:orora_shadow_offset_x="1dp"
+    app:orora_shadow_offset_y="1dp"
+    android:scaleType="centerInside"
+    android:src="@drawable/mjstudio"
+    android:id="@+id/orora"
+    ...
+ />
 ```
 
 ### code
 
 ```kotlin
-//Marble Touch Listener
-numberMarbleView.setOnMarbleTouchListener {
-    Toast.makeText(this,"you clicked $it marble!",Toast.LENGTH_SHORT).show()
-}
+orora.shadowColor = Color.BLACK
 
-//Custom Color at position, Default = Random
-numberMarbleView.setMarbleColor(0, Color.RED)
+orora.blurRadius = 25f
 
-//Set Marble Count
-numberMarbleView.marbleCount = 12
+orora.shadowOffsetX = 4f
 
-//Set Marble Radius to 12DP
-numberMarbleView.marbleRadius = resources.displayMetrics.density * 12
+orora.shadowOffsetY = 4f
 
-//Set Line Color to RED
-numberMarbleView.lineColor = Color.RED
-
-//Set Line Length to 12DP
-numberMarbleView.lineLength = resources.displayMetrics.density * 12
-
-//Set Number Text Color to WHITE
-numberMarbleView.numberTextColor = Color.WHITE
-
-//set Number Text Shadow Color to BLACK
-numberMarbleView.numberTextShadowColor = Color.BLACK
-
-//set Number Text Size to 12SP
-numberMarbleView.numberTextSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,12f,resources.displayMetrics)
-
-//Set Marble Orientation to VERTICAL
-numberMarbleView.isVertical = true
 ```
 
 ----
@@ -79,20 +47,17 @@ numberMarbleView.isVertical = true
 
 ```gradle
 allprojects {
-    repositories {
-        google()
-        jcenter()
-        maven {
-            url "https://mjstudio.bintray.com/MJStudio"
-        }
-    }
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
 }
 ```
 
 ### Module-level build.gradle
 
 ```gradle
-implementation 'mjstudio:numbermarbleview:1.0'
+implementation 'com.github.mym0404:OroraImageView:1.0'
 ```
 
 ----
