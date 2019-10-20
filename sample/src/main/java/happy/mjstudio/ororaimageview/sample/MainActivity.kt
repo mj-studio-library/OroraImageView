@@ -14,20 +14,25 @@ class MainActivity : AppCompatActivity() {
 
         buttonBlack.setOnClickListener {
             orora.shadowColor = Color.BLACK
+            orora2.shadowColor = Color.BLACK
         }
         buttonRed.setOnClickListener {
             orora.shadowColor = Color.RED
+            orora2.shadowColor = Color.RED
         }
         buttonBlue.setOnClickListener {
             orora.shadowColor = Color.BLUE
+            orora2.shadowColor = Color.BLUE
         }
         buttonYellow.setOnClickListener {
             orora.shadowColor = Color.YELLOW
+            orora2.shadowColor = Color.YELLOW
         }
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
                 orora.blurRadius = p1.toFloat()
+                orora2.blurRadius = p1.toFloat()
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
@@ -37,6 +42,5 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        orora.setImageResource(R.drawable.heart)
     }
 }
