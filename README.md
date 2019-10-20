@@ -8,6 +8,15 @@ Handy Drop Shadow image in ImageView
 
 [ElevationImageView](https://github.com/qhutch/ElevationImageView)
 
+## Sample
+
+<img src="https://github.com/mym0404/OroraImageView/blob/master/sample.gif" width=250>
+
+
+## How?
+
+- RenderScript
+
 
 ## Usage
 
