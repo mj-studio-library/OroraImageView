@@ -63,6 +63,15 @@ allprojects {
 		maven { url 'https://jitpack.io' }
 	}
 }
+
+
+defaultConfig {
+    ...
+
+    renderscriptTargetApi 18
+    renderscriptSupportModeEnabled false
+}
+
 ```
 
 ### Module-level build.gradle
