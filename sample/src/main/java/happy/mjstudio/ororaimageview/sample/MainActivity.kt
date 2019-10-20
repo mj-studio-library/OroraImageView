@@ -36,5 +36,7 @@ class MainActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(p0: SeekBar?) {
             }
         })
+
+        orora.setImageResource(R.drawable.heart)
     }
 }
